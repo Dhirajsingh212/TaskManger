@@ -1,0 +1,78 @@
+.login {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background: rgb(10, 35, 162);
+  background: linear-gradient(0deg, rgba(10, 35, 162, 1) 0%, rgba(24, 182, 219, 1) 80%, rgba(27, 219, 234, 1) 100%);
+  height: calc(107vh - 48px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginForm {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 2em 5em;
+  gap: 1.5em;
+  align-items: center;
+}
+
+.loginTitle {
+  align-self: center;
+  color: #0723a5;
+  font-weight: 1000;
+}
+
+.loginForm input {
+  padding: 2em;
+  font-size: 1em;
+  border: none;
+  color: black;
+  background-color: #f4f8f7;
+  border: none;
+  width: 100%;
+}
+
+.loginForm input:focus {
+  outline: none;
+}
+
+.login_buttons {
+  display: flex;
+  gap: 2em;
+}
+
+.login_buttons button {
+  border: none;
+  padding: 1em 2em;
+  border-radius: 1em;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+.loginRegisterButton a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.login_buttons button:hover {
+  color: white;
+  background: rgb(10, 35, 162);
+  background: linear-gradient(273deg, rgba(10, 35, 162, 1) 0%, rgba(24, 182, 219, 1) 80%, rgba(27, 219, 234, 1) 100%);
+}
+
+@media screen and (max-width:900px) {
+  .login{
+    background: white;
+    padding: 0;
+  }
+
+  .loginForm{
+    padding: 0;
+  }
+
+  .loginForm input{
+    width: auto;
+  }
+}

@@ -1,0 +1,113 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0em 3em;
+    background-color: #f7fbff;
+}
+
+.navbar_links {
+    display: flex;
+    align-items: center;
+    gap: 3em;
+    font-size: 1.2em;
+}
+
+.navbar_links_logout{
+    background-color: rgb(214 39 64);
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+}
+
+.navbar_links_addtask{
+    background-color: #4fe2a4;
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+}
+
+.navbar_links a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar_links a:hover{
+    border-bottom: 1px solid #00509f;
+    color: #00509f;
+}
+
+.navbar_links button {
+    font-size: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar_responsive_button {
+    display: none;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width:900px){
+    .navbar_responsive{
+        display: none !important;
+    }
+}
+
+.navbar_responsive_menu{
+    display: none;
+}
+
+.navbar_responsive_add{
+    display: none;
+    border: none;
+    background-color: inherit;
+}
+
+@media screen and (max-width:900px) {
+    
+    .navbar_responsive_button {
+        display: flex;
+    }
+
+    .navbar_links {
+        display: none;
+    }
+
+    .navbar_responsive_menu{
+        display: flex;
+    }
+
+    .navbar_responsive_add{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar_responsive {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1em;
+        gap: 1em;
+        color: #00509f;
+        background-color: white;
+    }
+
+    .navbar_responsive a {
+        text-decoration: none;
+        color: inherit;
+        font-size: 1em;
+    }
+    
+    .navbar_responsive button {
+        color: inherit;
+        border: none;
+        background-color: inherit;
+        padding: 0;
+        font-size: 1em;
+    } 
+}

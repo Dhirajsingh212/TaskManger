@@ -1,0 +1,48 @@
+.edittask_main{
+    background: rgb(10,35,162);
+    background: linear-gradient(273deg, rgba(10,35,162,1) 0%, rgba(24,182,219,1) 80%, rgba(27,219,234,1) 100%);
+    padding: 4em;
+    height: calc(78vh - 45px);
+}
+
+
+.edittask{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    padding: 1em;
+    border-radius: 0.5em;
+    justify-content: space-between;
+}
+
+.edittask input{
+    font-size: 1.2em;
+    color: #00509f;
+    padding: 0.5em;
+}
+
+.edittask p{
+    color: #ff4343;
+}
+
+.edittask button{
+    border: none;
+    background-color: #4fe2a4;
+    color: white;
+    padding: 0.5em 2em;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 0.5em;
+}
+
+@media screen and (max-width:900px) {
+    .edittask{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    .edittask_main{
+        padding: 2em;
+        height: calc(80vh - 10px);
+    }
+}
